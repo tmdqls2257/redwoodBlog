@@ -1,4 +1,3 @@
-import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import Animation from 'src/components/Animation/Animation'
 import LandingLayout from 'src/layouts/LandingLayout/LandingLayout'
