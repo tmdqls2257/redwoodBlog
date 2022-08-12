@@ -9,7 +9,7 @@ const CustomCard = ({ style, children }: customCardProps) => {
   return (
     <li
       className={classNames(
-        'rounded-md bg-custom-white px-4 py-4 drop-shadow-md',
+        'rounded-md border-trend-color border-1 space-y-2 bg-custom-white p-4 ',
         style
       )}
       // style={{ background: bg }}

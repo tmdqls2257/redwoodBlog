@@ -2,7 +2,7 @@ import CustomCard from './CustomCard'
 
 export const customCard = () => {
   return <CustomCard >
-    <p>{'sdsddsssdsd'}</p>
+    <p>{'test 입니다.'}</p>
   </CustomCard>
 }
 
