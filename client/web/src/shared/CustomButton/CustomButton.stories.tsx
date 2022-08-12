@@ -22,4 +22,4 @@ export const customLargeButton = () => {
   </CustomButton>
 }
 
-export default { title: 'Components/CustomButton' }
+export default { title: 'Shared/CustomButton' }
