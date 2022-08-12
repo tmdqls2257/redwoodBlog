@@ -6,7 +6,7 @@ type CustomFormProps ={
 
 const CustomForm = ({placeholder, onBlur}:CustomFormProps) => {
   return (
-    <input className="appearance-none block w-full bg-custom-grey text-custom-black border border-custom-grey rounded py-3 px-4 leading-tight focus:outline-none focus:bg-custom-white focus:border-custom-grey"  type="text" placeholder={placeholder} onBlur={onBlur} />
+    <input className="appearance-none block w-full bg-custom-white text-trend-color border border-trend-color rounded py-3 px-4 leading-tight focus:outline-none "  type="text" placeholder={placeholder} onBlur={onBlur} />
   )
 }
 
