@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "src/components/Header/Header"
 import Footer from '../../components/Footer/Footer';
 
@@ -6,8 +7,14 @@ type LandingLayoutProps = {
 }
 
 const LandingLayout = ({ children }: LandingLayoutProps) => {
+  const [hamState, setHamState] = useState(false)
+
+  const onClick = () => {
+    setHamState(!hamState)
+  }
+
   return <>
-  <Header/>
+  <Header onClick={onClick}/>
   {children}
   <Footer />
   </>
