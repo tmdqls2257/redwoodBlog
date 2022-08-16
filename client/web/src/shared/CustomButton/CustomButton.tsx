@@ -14,7 +14,7 @@ type CustomButtonProps = {
 
 const CustomButton = ({children, size = buttonSize.small }:CustomButtonProps) => {
   return (
-    <button className={classNames(size,"bg-transparent hover:bg-trend-color text-trend-color font-semibold hover:text-custom-white py-2 px-4 border border-trend-color hover:border-transparent text-center rounded")}>
+    <button className={classNames(size,"border-1 border-black rounded-sm hover:bg-custom-violet hover:border-none")}>
       {children}
     </button>
   )

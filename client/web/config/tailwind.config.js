@@ -10,7 +10,12 @@ module.exports = {
       'custom-magenta': '#F1B2DC',
       'custom-light-grey': '#C1C6C8',
       'custom-grey': '#A2AAAD',
-      'custom-black': '#101820'
+      'custom-black': '#101820',
+      'custom-red': '#EF3340',
+      'custom-white': '#fff',
+    },
+    borderWidth: {
+      '1': '1px'
     }
   },
   plugins: [],
