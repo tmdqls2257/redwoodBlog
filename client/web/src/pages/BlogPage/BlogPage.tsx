@@ -1,7 +1,8 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Link, routes, useLocation } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
 const BlogPage = () => {
+  const location = useLocation()
   return (
     <>
       <MetaTags title="Blog" description="Blog page" />
@@ -12,7 +13,8 @@ const BlogPage = () => {
       </p>
       <p>
         My default route is named <code>blog</code>, link to me with `
-        <Link to={routes.blog()}>Blog</Link>`
+        {/* <Link to={routes.blog()}>Blog</Link>` */}
+        <p>{location.pathname}</p>
       </p>
     </>
   )

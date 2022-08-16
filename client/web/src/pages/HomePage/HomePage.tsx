@@ -15,7 +15,7 @@ const HomePage = () => {
         My default route is named <code>home</code>, link to me with `
         <Link to={routes.home()}>Home</Link>`
       </p> */}
-      <LandingLayout>
+
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -29,7 +29,6 @@ const HomePage = () => {
           <Animation/>
         </div>
       </section>
-      </LandingLayout>
     </>
   )
 }
