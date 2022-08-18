@@ -1,4 +1,4 @@
-import { Link, routes, useLocation } from '@redwoodjs/router'
+import { useLocation } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
 const BlogPage = () => {

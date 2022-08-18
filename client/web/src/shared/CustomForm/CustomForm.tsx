@@ -1,12 +1,16 @@
-type CustomFormProps ={
+type CustomFormProps = {
   placeholder: string
   onBlur: React.FocusEventHandler<HTMLInputElement>
-
 }
 
-const CustomForm = ({placeholder, onBlur}:CustomFormProps) => {
+const CustomForm = ({ placeholder, onBlur }: CustomFormProps) => {
   return (
-    <input className="appearance-none block w-full bg-custom-white text-custom-violet border border-custom-violet rounded py-3 px-4 leading-tight focus:outline-none "  type="text" placeholder={placeholder} onBlur={onBlur} />
+    <input
+      className="block w-full appearance-none rounded border border-violet bg-white py-3 px-4 leading-tight text-violet focus:outline-none "
+      type="text"
+      placeholder={placeholder}
+      onBlur={onBlur}
+    />
   )
 }
 

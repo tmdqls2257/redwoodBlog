@@ -1,4 +1,4 @@
-import classNames from "src/utils/ClassNames"
+import classNames from 'src/utils/ClassNames'
 
 type customCardProps = {
   style?: string
@@ -9,7 +9,7 @@ const CustomCard = ({ style, children }: customCardProps) => {
   return (
     <li
       className={classNames(
-        'rounded-md drop-shadow-lg space-y-2 bg-custom-white w-fit',
+        'w-fit space-y-2 rounded-md bg-white drop-shadow-lg',
         style
       )}
       // style={{ background: bg }}

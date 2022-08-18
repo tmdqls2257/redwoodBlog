@@ -8,8 +8,10 @@
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
 import { Router, Route, Set } from '@redwoodjs/router'
+
+import { NavbarData } from './components/Navbar/NavbarData'
+import ContantLayout from './layouts/ContantLayout/ContantLayout'
 import LandingLayout from './layouts/LandingLayout/LandingLayout'
-import { navbarData } from './components/Navbar/navbarData';
 
 const Routes = () => {
   return (
@@ -21,14 +23,12 @@ const Routes = () => {
       {/* <Route path="/login" page={LogInPage} name="logIn" /> */}
       <Route path="/contact" page={ContactPage} name="contact" />
       <Route path="/projects" page={ProjectsPage} name="projects" />
-      <Set wrap={LandingLayout} >
-        {navbarData.map((datas,idx) =>(
-          datas.content.map(data => (
-            <Route key={idx} path={data.path} page={BlogPage} name="blog" />
-          ))
-        ))}
-        <Route path="/blog" page={BlogPage} name="blog" />
-        <Route path="/" page={HomePage} name="home" />
+      <Set wrap={LandingLayout}>
+        <Set wrap={ContantLayout}>
+          <Route path="/blog/mark_up/html" page={HtmlPage} name="login" />
+          <Route path="/blog" page={BlogPage} name="blog" />
+          <Route path="/" page={HomePage} name="home" />
+        </Set>
       </Set>
 
       <Route notfound page={NotFoundPage} />

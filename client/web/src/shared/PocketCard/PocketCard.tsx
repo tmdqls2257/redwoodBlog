@@ -1,4 +1,4 @@
-import CustomCard from "../CustomCard/CustomCard"
+import CustomCard from '../CustomCard/CustomCard'
 
 type PocketCardProps = {
   title: string
@@ -6,7 +6,7 @@ type PocketCardProps = {
   imgSrc: string
 }
 
-const PocketCard = ({title, body, imgSrc}:PocketCardProps) => {
+const PocketCard = ({ title, body, imgSrc }: PocketCardProps) => {
   return (
     <CustomCard style="w-1/3">
       <section className=" divide-y divide-dashed ">

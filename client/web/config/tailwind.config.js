@@ -2,21 +2,19 @@
 module.exports = {
   content: ['src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
-    colors:{
-      'custom-mint': '#9DE7D7',
-      'custom-blue': '#74D1EA',
-      'custom-violet': '#BF9BDE',
-      'custom-magenta': '#F1B2DC',
-      'custom-light-grey': '#C1C6C8',
-      'custom-grey': '#A2AAAD',
-      'custom-black': '#101820',
-      'custom-red': '#EF3340',
-      'custom-white': '#fff',
+    extend: {
+      colors: {
+        mint: '#9DE7D7',
+        blue: '#74D1EA',
+        violet: '#BF9BDE',
+        magenta: '#F1B2DC',
+        'light-grey': '#C1C6C8',
+        grey: '#A2AAAD',
+        black: '#101820',
+        red: '#EF3340',
+        white: '#fff',
+      },
     },
-    borderWidth: {
-      '1': '1px'
-    }
   },
   plugins: [],
 }

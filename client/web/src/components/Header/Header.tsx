@@ -1,13 +1,12 @@
-import IconBox, { IconType } from "src/shared/IconBox/IconBox"
+import IconBox, { IconType } from 'src/shared/IconBox/IconBox'
 
 type HeaderProps = {
   onClick: () => void
 }
 
-const Header = ({onClick}: HeaderProps) => {
-
+const Header = ({ onClick }: HeaderProps) => {
   return (
-    <header className="bg-custom-white border-custom-violet border flex items-center justify-between ">
+    <header className="bg-custom-white border-custom-violet flex items-center justify-between border ">
       <button onClick={onClick}>
         <IconBox iconName={IconType.menu} />
       </button>
