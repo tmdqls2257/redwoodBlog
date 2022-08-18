@@ -15,7 +15,7 @@ const MenuItem = ({ path, title, content}:menuItemProps) => {
   }
   return (
     <li>
-      <div className={'bg-black w-full flex justify-between p-2'}>
+      <div className={' w-full flex justify-between p-2'}>
         <Link className="mr-5" to={path}>{title}</Link>
         <button onClick={onClick}>
           {isArrowRight ? (<IconBox style="h-4 w-4" iconName={IconType.right_arrow} />) : (<IconBox style="h-4 w-4" iconName={IconType.down_arrow} />)}
@@ -24,7 +24,7 @@ const MenuItem = ({ path, title, content}:menuItemProps) => {
       {!isArrowRight && (
         <ul>
         {content.map((data, idx) => (
-          <li className={'bg-black w-full flex justify-between p-2'} key={idx}>
+          <li className={' w-full flex justify-between p-2'} key={idx}>
             <Link to={data.path}><p>{data.title}</p></Link>
           </li>
         ))}
